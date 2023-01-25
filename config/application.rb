@@ -15,5 +15,6 @@ module Mynewapp
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    config.constants = ActiveSupport::OrderedOptions.new.merge(Rails.application.config_for(:constants).deep_symbolize_keys)
   end
 end

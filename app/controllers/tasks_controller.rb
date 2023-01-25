@@ -61,9 +61,6 @@ class TasksController < ApplicationController
     end
 
     def get_project
-      puts params
       @project = Project.find(params[:project_id])
-      # puts "nothing"
-      # puts @project.id
     end
 end
