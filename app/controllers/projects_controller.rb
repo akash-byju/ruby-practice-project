@@ -12,7 +12,6 @@ class ProjectsController < ApplicationController
 
   # GET /projects/new
   def new
-    # puts current_user
     @project = Project.new
   end
 
